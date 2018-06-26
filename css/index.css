@@ -1,0 +1,245 @@
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body
+{
+    text-align:center;
+    font: 14px/1.5 "微软雅黑",Verdana,Tahoma,Arial,sans-serif,"宋体";
+    line-height:30px;
+}
+
+/*header*/
+header {
+    height: 80px;
+    margin: 0 15px;
+}
+
+header .banner {
+    height:100%;
+    float: left;
+    margin-right: 40px;
+}
+
+header .banner img {
+    height:100%;
+    width: 150px;
+}
+
+header ul {
+    float: left;
+    font-size: 18px;
+    height:100%;
+    line-height: 80px;
+}
+
+header ul li  {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header li a{
+    margin-left: 20px;
+    color: #666;
+}
+
+header .login {
+    cursor: pointer;
+    float: right;
+    height:80px;
+    line-height: 80px;
+    color: #666;
+}
+
+
+/* swipe 导航*/
+.swipe {
+    width: 1200px;
+    height: 450px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.swipe .ppt {
+    width: 100%;
+    height:100%;
+}
+
+.swipe .ppt.first {
+    background: url("../img/001.jpg");
+    background-size: cover;
+}
+
+.swipe .nav {
+    float: left;
+    width: 280px;
+    height: 450px;
+    background: #000;
+    color: #fff;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.nav .item {
+    margin: 5px 20px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #aaa;
+}
+
+
+.nav .item:hover {
+    background:#666;
+    cursor: pointer;
+}
+
+.nav .item .title {
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.nav .item span {
+    margin-right : 9px;
+}
+
+
+/*lessons */
+.lessons {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.lessons .title {
+    text-align: left;
+    line-height : 45px;
+    color:#666;
+    font-size:16px;
+    margin-top:30px;
+}
+
+.lessons ul {
+    overflow: hidden; /*清除浮动*/
+}
+.lessons li {
+    float: left;
+    width: 23%;
+    margin-right: 32px;
+    margin-top: 32px;
+}
+
+.lessons li img {
+    max-width: 100%;
+}
+
+
+/*footer*/
+
+.footer {
+    margin-top: 50px;
+    padding: 50px 0;
+    background: #eee;
+    border-top : 1px solid #ddd;
+}
+
+.footer span {
+    margin:0 20px;
+    color :#888;
+}
+
+.footer .site {
+    line-height:100px;
+}
+
+
+/*弹出层*/
+.layer-mask {
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-color:  #000;
+    opacity:.5;
+}
+
+.layer-pop {
+    display: none;
+    width: 500px;
+    height: 300px;
+    background: #fff;
+/*    position: absolute;
+    top:50%;
+    margin-top: -150px;
+    left:50%;
+    margin-left: -200px;*/  /*不使用绝对定位而使用fixed是因为滚动条滚动弹出层也要在中间显示*/
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    z-index: 9999;
+}
+
+.layer-close {
+    float: right;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #fff;
+    text-align: center;
+    line-height:24px;
+    border-radius: 50%;
+    background: #eee;
+    margin-right: -12px;
+    margin-top: -12px;
+}
+
+.layer-close:hover
+{
+    cursor: pointer;
+    background: #ccc;
+    color: #fff;
+}
+
+
+.logins h4 {
+    font-size:20px;
+    line-height:50px;
+}
+
+.logins .item {
+    margin: 20px auto;
+}
+
+.logins label {
+    margin-right: 5px;
+    color: #888;
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+
+.logins .input {
+    width: 250px;
+    padding: 10px 5px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+}
+
+.logins .submit {
+    box-sizing: content-box;
+    background: #e40;
+    border:1px solid #e40;
+    border-radius:5px;
+    padding:10px 5px;
+    width:250px;
+    color:#fff;
+}
+
+.logins .error-msg {
+    color: red;
+}
